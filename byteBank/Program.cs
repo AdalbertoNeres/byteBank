@@ -3,28 +3,28 @@ using byteBank.Titular;
 using System.Security.Cryptography.X509Certificates;
 
 
-Cliente cliente = new Cliente();
-cliente.nome = "André Silva";
-cliente.cpf = "00510972306";
-cliente.profissao = "Analista";
+//Cliente cliente = new Cliente();
+//cliente.nome = "André Silva";
+//cliente.cpf = "00510972306";
+//cliente.profissao = "Analista";
 
-ContaCorrente conta = new ContaCorrente();
-conta.titular = cliente;
-conta.conta = "1010-x";
-conta.numero_agencia = 15;
-conta.saldo = 100;
+//ContaCorrente conta = new ContaCorrente();
+//conta.titular = cliente;
+//conta.conta = "1010-x";
+//conta.numero_agencia = 15;
+//conta.saldo = 100;
 
-Console.WriteLine("titular = " + conta.titular.nome);
-Console.WriteLine();
-Console.WriteLine("cpf = " + conta.titular.cpf);
-Console.WriteLine();
-Console.WriteLine( "Profissão" + conta.titular.profissao);
-Console.WriteLine();
-Console.WriteLine( "N° da conta = " + conta.conta);
-Console.WriteLine();
-Console.WriteLine("Saldo = " + conta.saldo);
-Console.WriteLine();
-Console.WriteLine("N° da Agência = " + conta.numero_agencia);
+//Console.WriteLine("titular = " + conta.titular.nome);
+//Console.WriteLine();
+//Console.WriteLine("cpf = " + conta.titular.cpf);
+//Console.WriteLine();
+//Console.WriteLine( "Profissão" + conta.titular.profissao);
+//Console.WriteLine();
+//Console.WriteLine( "N° da conta = " + conta.conta);
+//Console.WriteLine();
+//Console.WriteLine("Saldo = " + conta.saldo);
+//Console.WriteLine();
+//Console.WriteLine("N° da Agência = " + conta.numero_agencia);
 
 
 //ContaCorrente ContaDoAndre = new ContaCorrente();
@@ -49,4 +49,8 @@ Console.WriteLine("N° da Agência = " + conta.numero_agencia);
 //Console.WriteLine("SAldo da Maria" + ContaDaMaria.saldo);
 //ContaCorrente ContaDoPedro = new ContaCorrente();
 //ContaDoPedro.titula = "Pedro Silva";
+ContaCorrente conta3 = new ContaCorrente();
+conta3.SetSaldo(-10);
+Console.WriteLine(conta3.GetSaldo());
 
+//05. propriedades - 04 propriedades
